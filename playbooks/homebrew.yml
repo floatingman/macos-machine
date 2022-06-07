@@ -3,6 +3,15 @@
   hosts: all
   tags: homebrew
   tasks:
+    - name: Install Brave Browser
+      when: install_brave | bool
+      tags: brave
+      import_role:
+        name: markosamuli.machine.install_cask_apps
+      vars:
+        cask_apps:
+          - { name: brave-browser }
+
     - name: Install Google Chrome
       when: install_chrome | bool
       tags: chrome
