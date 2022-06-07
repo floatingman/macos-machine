@@ -2,7 +2,7 @@
 
 DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
-MACHINE_REPO=${MACHINE_REPO:-https://github.com/markosamuli/macos-machine.git}
+MACHINE_REPO=${MACHINE_REPO:-https://github.com/floatingman/macos-machine.git}
 MACHINE_BRANCH=${MACHINE_BRANCH:-master}
 MACHINE=${MACHINE:-$HOME/.machine}
 
